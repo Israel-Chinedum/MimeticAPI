@@ -1,0 +1,37 @@
+#mockapi-space {
+  display: flex;
+}
+
+#text-area {
+  width: 400px;
+  height: 400px;
+  resize: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgb(39, 39, 39);
+  color: blue;
+  border: 1px solid lightblue;
+}
+
+#mockapi-space button {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+#code-area {
+  display: flex;
+  flex-direction: column;
+}
+
+#endpoint-area {
+  padding: 10px;
+  width: 400px;
+}
+
+#endpoint-area p {
+  border-bottom: 2px dashed var(--btnBkg);
+}

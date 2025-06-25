@@ -1,0 +1,26 @@
+#main button {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+#sub-main button {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+#sub-main p {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+#sub-main input {
+  padding: 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+  font-size: 15px;
+  outline: none;
+}

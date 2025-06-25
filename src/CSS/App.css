@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: Bahnschrift Light;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(22, 20, 31);
+  --myColor: rgb(230, 227, 227);
+  --btnColor: rgb(37, 37, 37);
+  --btnBkg: rgb(135, 186, 202);
+  color: var(--myColor);
+}
+
+#container button {
+  background-color: var(--btnBkg);
+  color: var(--btnColor);
+  transition: 0.2s;
+}
+
+#container button:hover {
+  background-color: lightblue;
+}
+
+#container p {
+  font-size: 19px;
+}
