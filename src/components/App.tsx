@@ -21,7 +21,7 @@ function App() {
           <div id="container">
             <LoadAnimation />
             <img
-              src="../../../public/mockapi.svg"
+              src="/mockapi.svg"
               width="700vw"
               style={{
                 position: "absolute",
