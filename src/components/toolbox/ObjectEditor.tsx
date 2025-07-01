@@ -1,5 +1,5 @@
 import React from "react";
-import Editor, { loader } from "@monaco-editor/react";
+import Editor from "@monaco-editor/react";
 
 interface ObjectEditorProps {
   value: string;
@@ -7,12 +7,6 @@ interface ObjectEditorProps {
 }
 
 const ObjectEditor: React.FC<ObjectEditorProps> = ({ value, onChange }) => {
-  //   loader.config({
-  //     paths: {
-  //       vs: "../../../public/monaco/vs",
-  //     },
-  //   });
-
   return (
     <div id="text-area">
       <Editor
