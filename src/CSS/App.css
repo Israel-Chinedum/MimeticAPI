@@ -18,6 +18,7 @@
   --btnColor: rgb(37, 37, 37);
   --btnBkg: rgb(135, 186, 202);
   color: var(--myColor);
+  position: relative;
 }
 
 #container button {
@@ -32,4 +33,14 @@
 
 #container p {
   font-size: 19px;
+}
+
+#container #msg {
+  position: absolute;
+  background-color: var(--btnBkg);
+  padding: 10px;
+  color: var(--btnColor);
+  border-radius: 5px;
+  top: 5vh;
+  font-size: 17px;
 }

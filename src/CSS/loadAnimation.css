@@ -1,0 +1,28 @@
+#load-animation-container {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.767);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner {
+  width: 70px;
+  height: 70px;
+  border-top: 5px dotted var(--btnBkg);
+  border-left: 5px dotted var(--btnBkg);
+  border-radius: 50%;
+  animation: spin 0.3s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
