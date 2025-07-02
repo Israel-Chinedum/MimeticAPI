@@ -114,7 +114,7 @@ export const MockApp = () => {
             }}
           >
             Note each link you generate will be active
-            <br /> for one hour and after that, will be deactivated!
+            <br /> for 24 hours and after that, will be deactivated!
           </p>
         </div>
       </div>
