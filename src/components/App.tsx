@@ -25,7 +25,7 @@ function App() {
               width="700vw"
               style={{
                 position: "absolute",
-                opacity: "0.03",
+                opacity: "0.3",
               }}
               alt=""
             />

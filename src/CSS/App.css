@@ -19,6 +19,7 @@
   --btnBkg: rgb(135, 186, 202);
   color: var(--myColor);
   position: relative;
+  overflow: hidden;
 }
 
 #container button {
