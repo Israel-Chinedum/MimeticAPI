@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MessageContext, LoadAnimationContext } from "./toolbox/MyContext";
 import { LandingPage } from "./LandingPage";
-import { MockApp } from "./MockApp";
+import { MimeticApp } from "./MimeticApp";
 import { useDisplayMsg } from "./toolbox/displayMessage";
 import { LoadAnimation } from "./toolbox/LoadAnimation";
 import { useState } from "react";
@@ -59,7 +59,7 @@ function App() {
             )}
             <Routes>
               <Route path="/" element={<LandingPage />} />
-              <Route path="/mockapi" element={<MockApp />} />
+              <Route path="/mimeticapp" element={<MimeticApp />} />
             </Routes>
           </div>
         </MessageContext.Provider>

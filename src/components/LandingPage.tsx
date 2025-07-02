@@ -44,13 +44,15 @@ export const LandingPage = () => {
   return (
     <>
       <div id="main">
-        <h1>Welcome to MockAPI</h1>
+        <h1>Welcome to MimeticAPI</h1>
         <p>
-          Effortlessly create mock API route keys in seconds;
+          Effortlessly create mimetic API route keys in seconds;
           <br /> ideal for automated testing, frontend development, and live
           previews.
         </p>
-        <button onClick={() => navigate("/mockapi")}>Start Mocking Now</button>
+        <button onClick={() => navigate("/mimeticapp")}>
+          Generate Mimetic APIs Now
+        </button>
       </div>
       <div id="sub-main">
         <p>Want early access to new features like POST, auth, etc?</p>

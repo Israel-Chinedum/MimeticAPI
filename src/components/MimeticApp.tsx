@@ -1,11 +1,11 @@
-import "../CSS/mockapp.css";
+import "../CSS/Mimeticapp.css";
 import { useRef, useState, useEffect } from "react";
 import { usePrint } from "./toolbox/print";
 import { useFetch } from "./toolbox/fetch";
 import { useMessage, loadAnimation } from "./toolbox/MyContext";
 import ObjectEditor from "./toolbox/ObjectEditor";
 
-export const MockApp = () => {
+export const MimeticApp = () => {
   const pTag = useRef<HTMLParagraphElement>(null);
   const endpoint = useRef<string>("");
   const jsonData = useRef<object>({});
@@ -24,7 +24,7 @@ export const MockApp = () => {
   });
 
   const { error, response, makeReq } = useFetch({
-    link: "https://mockapi-server.onrender.com/mockapi",
+    link: "https://mimetic-server.onrender.com/mimeticapi",
     method: "POST",
     data: jsonData.current,
   });
@@ -70,7 +70,7 @@ export const MockApp = () => {
 
   return (
     <>
-      <div id="mockapi-space">
+      <div id="mimeticapi-space">
         <div id="code-area">
           <ObjectEditor
             value={editorData}
