@@ -1,4 +1,4 @@
-import "../CSS/Mimeticapp.css";
+import "../CSS/mimeticapp.css";
 import { useRef, useState, useEffect } from "react";
 import { usePrint } from "./toolbox/print";
 import { useFetch } from "./toolbox/fetch";
