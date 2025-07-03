@@ -52,6 +52,7 @@ function App() {
                       ? "red"
                       : "rgb(135, 186, 202)",
                   color: msgType === "error" ? "white" : "rgb(37, 37, 37)",
+                  zIndex: "10",
                 }}
               >
                 {message}
