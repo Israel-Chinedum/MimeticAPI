@@ -12,7 +12,7 @@ export const LandingPage = () => {
   const { setAnimation, setPlayState } = loadAnimation();
 
   const { makeReq, error, response } = useFetch({
-    link: "https://mockapi-server.onrender.com/email",
+    link: "https://mimetic-server.onrender.com/email",
     method: "POST",
     data: { email: inputData.current?.value },
   });
