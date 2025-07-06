@@ -53,8 +53,8 @@ function App() {
                       : "rgb(135, 186, 202)",
                   color: msgType === "error" ? "white" : "rgb(37, 37, 37)",
                   zIndex: "10",
-                  position: "sticky",
-                  top: "5px",
+                  position: "fixed",
+                  top: "2vh",
                 }}
               >
                 {message}
