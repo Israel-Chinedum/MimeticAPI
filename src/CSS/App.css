@@ -13,13 +13,13 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(22, 20, 31);
+  background-color: black;
   --myColor: rgb(230, 227, 227);
   --btnColor: rgb(37, 37, 37);
   --btnBkg: rgb(135, 186, 202);
   color: var(--myColor);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #container button {

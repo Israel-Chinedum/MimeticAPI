@@ -21,6 +21,7 @@ export const MimeticApp = () => {
     tpl: 10,
     delay: 500,
     text: endpoint.current,
+    showCursor: false,
   });
 
   const { error, response, makeReq } = useFetch({
@@ -110,11 +111,10 @@ export const MimeticApp = () => {
               color: "grey",
               marginTop: "50px",
               border: "none",
-              textAlign: "start",
             }}
           >
-            Note each link you generate will be active
-            <br /> for 24 hours and after that, will be deactivated!
+            Note each link you generate will be active for 24 hours and after
+            that, will be deactivated!
           </p>
         </div>
       </div>

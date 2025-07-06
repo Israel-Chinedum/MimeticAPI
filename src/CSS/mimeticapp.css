@@ -1,10 +1,14 @@
 #mimeticapi-space {
   display: flex;
   z-index: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 #text-area {
-  width: 500px;
+  width: 80vw;
+  min-width: 200px;
   height: 400px;
   resize: none;
   outline: none;
@@ -26,11 +30,10 @@
 }
 
 #endpoint-area {
-  padding: 10px;
-  width: 400px;
+  padding: 20px;
+  text-align: center;
 }
 
 #endpoint-area p {
   border-bottom: 2px dashed var(--btnBkg);
-  width: max-content;
 }

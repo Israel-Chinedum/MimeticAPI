@@ -61,9 +61,8 @@ export const usePrint = ({
         i++;
       };
 
-      element.style.width = "max-content";
-
       if (showCursor) {
+        element.style.width = "max-content";
         element.style.height = cursorHeight;
         element.style.borderRight = `${cursorWidth} solid ${cursorColor}`;
 
