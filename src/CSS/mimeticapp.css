@@ -32,8 +32,10 @@
 #endpoint-area {
   padding: 20px;
   text-align: center;
+  width: 80vw;
 }
 
 #endpoint-area p {
   border-bottom: 2px dashed var(--btnBkg);
+  overflow-wrap: break-word;
 }
