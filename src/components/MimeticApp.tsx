@@ -70,54 +70,52 @@ export const MimeticApp = () => {
   }, [response]);
 
   return (
-    <>
-      <div id="mimeticapi-space">
-        <div id="code-area">
-          <ObjectEditor
-            value={editorData}
-            onChange={(value) => setEditorData(value as string)}
-          />
-          <button
-            id="gen-btn"
-            onClick={() => {
-              sendReq();
-            }}
-          >
-            Generate api link
-          </button>
-        </div>
-        <div id="endpoint-area">
-          <p ref={pTag}>Your link will appear here!</p>
-          <button
-            onClick={() => {
-              pTag.current?.innerText &&
-                navigator.clipboard
-                  .writeText(pTag.current?.innerText)
-                  .then(() =>
-                    showMsg({ msg: "Copied", type: "success", timer: 3000 })
-                  )
-                  .catch((err) => {
-                    showMsg({ msg: "Copied", type: "warning", timer: 3000 });
-                    console.log("Error: ", err);
-                  });
-            }}
-            id="copy-btn"
-            style={{ display: `${display}` }}
-          >
-            Copy
-          </button>
-          <p
-            style={{
-              color: "grey",
-              marginTop: "50px",
-              border: "none",
-            }}
-          >
-            Note each link you generate will be active for 24 hours and after
-            that, will be deactivated!
-          </p>
-        </div>
+    <div id="mimeticapi-space">
+      <div id="code-area">
+        <ObjectEditor
+          value={editorData}
+          onChange={(value) => setEditorData(value as string)}
+        />
+        <button
+          id="gen-btn"
+          onClick={() => {
+            sendReq();
+          }}
+        >
+          Generate api link
+        </button>
       </div>
-    </>
+      <div id="endpoint-area">
+        <p ref={pTag}>Your link will appear here!</p>
+        <button
+          onClick={() => {
+            pTag.current?.innerText &&
+              navigator.clipboard
+                .writeText(pTag.current?.innerText)
+                .then(() =>
+                  showMsg({ msg: "Copied", type: "success", timer: 3000 })
+                )
+                .catch((err) => {
+                  showMsg({ msg: "Copied", type: "warning", timer: 3000 });
+                  console.log("Error: ", err);
+                });
+          }}
+          id="copy-btn"
+          style={{ display: `${display}` }}
+        >
+          Copy
+        </button>
+        <p
+          style={{
+            color: "grey",
+            border: "none",
+            marginTop: "10px",
+          }}
+        >
+          Note each link you generate will be active for 24 hours and after
+          that, will be deactivated!
+        </p>
+      </div>
+    </div>
   );
 };

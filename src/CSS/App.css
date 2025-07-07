@@ -20,6 +20,8 @@
   color: var(--myColor);
   position: relative;
   overflow-x: hidden;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #container button {

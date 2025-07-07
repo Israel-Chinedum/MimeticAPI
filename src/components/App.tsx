@@ -18,7 +18,7 @@ function App() {
         value={{ displayAnimation, setAnimation, playState, setPlayState }}
       >
         <MessageContext.Provider value={{ message, showMsg }}>
-          <div id="container">
+          <div id="container" style={{ overflow: playState ? "hidden" : "" }}>
             <LoadAnimation />
             <img
               src="/mockapi.svg"
