@@ -31,7 +31,6 @@ export const useFetch = ({
           headers: { "Content-Type": "application/json" },
           method: "POST",
           body: JSON.stringify({ data }),
-          credentials: "include",
         });
         error.current = false;
         const resData = await res.json();
