@@ -4,6 +4,7 @@ import { LandingPage } from "./LandingPage";
 import { MimeticApp } from "./MimeticApp";
 import { useDisplayMsg } from "./toolbox/displayMessage";
 import { LoadAnimation } from "./toolbox/LoadAnimation";
+import Logo from '../../public/mockapi.svg'
 import { useState } from "react";
 import "../CSS/App.css";
 
@@ -20,15 +21,21 @@ function App() {
         <MessageContext.Provider value={{ message, showMsg }}>
           <div id="container" style={{ overflow: playState ? "hidden" : "" }}>
             <LoadAnimation />
-            <img
-              src="/mockapi.svg"
-              width="700vw"
-              style={{
-                position: "absolute",
-                opacity: "0.3",
-              }}
-              alt=""
-            />
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              height: "100vh",
+              position: "absolute",
+              opacity: "0.3",
+            }}>
+              <img
+                src={Logo}
+                style={{
+                  height: "95%"
+                }}
+                alt=""
+              />
+            </div>
             <div
               style={{
                 position: "absolute",
